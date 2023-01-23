@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200;500&display=swap');
+
+/* Home Page CSS */
+body,
+html {
+	margin: 0px;
+	padding: 0px;
+}
+.homePage-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Menu rideau */
+.nav-toggler {
+	position: fixed;
+	z-index: 10;
+	top: 30px;
+	left: 30px;
+	height: 50px;
+	width: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+/* Partie haute de la page */
+
+.homePage-top {
+	background-color: #ff7700;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #f1f1f1;
+	transition: transform 0.3s ease-out,
+	opacity 0.1s ease-out;
+}
+.l1 {
+	transform: translateY(-10px);
+}
+.l3 {
+	transform: translateY(10px);
+}
+.nav-toggler.active .l1 {
+	transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.active .l2 {
+	opacity: 0;
+}
+.nav-toggler.active .l3 {
+	transform: translateY(0px) rotate(-45deg);
+}
+nav {
+	position: fixed;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #111;
+	transform: translateX(-100%);
+	transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+nav.active {
+	transform: translateX(0);
+}
+nav a {
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	color: #f1f1f1;
+	font-size: 4em;
+	display: block;
+	margin: 20px 0;
+	text-decoration: none;
+}
+.txtHover:hover {
+	color: #ff7700;
+}
+
+.textAcroche {
+	color: #f1f1f1;
+	width: 80vw;
+	font-size: 3em;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Partie basse de la page */
+.homePage-bottom {
+	background-color: #f1f1f1;
+	width: 100vw;
+	height: 100vh;
+}
