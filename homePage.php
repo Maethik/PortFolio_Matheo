@@ -10,18 +10,18 @@
 <body>
 	<div class="homePage-container">
 		<div class="homePage-top">
-        <nav>
-			<a class="txtHover" href="#">A propos</a>
-			<a class="txtHover" href="#">Mon CV</a>
-			<a class="txtHover" href="#">Mes projets</a>
-			<a class="txtHover" href="#">Me contacter</a>
-        </nav>
+			<nav>
+				<a class="txtHover" href="#">A propos</a>
+				<a class="txtHover" href="#">Mon CV</a>
+				<a class="txtHover" href="#">Mes projets</a>
+				<a class="txtHover" href="#">Me contacter</a>
+			</nav>
 
-        <button type="button" aria-label="toggle cutain navigation" class="nav-toggler">
-            <span class="line l1"></span>
-            <span class="line l2"></span>
-            <span class="line l3"></span>
-        </button>
+			<button type="button" aria-label="toggle cutain navigation" class="nav-toggler">
+				<span class="line l1"></span>
+				<span class="line l2"></span>
+				<span class="line l3"></span>
+			</button>
 
 			<!-- Titre d'accroche -->
 			<div class="textAcroche">

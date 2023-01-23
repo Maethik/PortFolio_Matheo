@@ -89,13 +89,13 @@ nav a {
 
 .textAcroche {
 	color: #f1f1f1;
-	width: 80vw;
+	width: 33vw;
 	font-size: 3em;
 	font-family: 'Sofia Sans Semi Condensed', sans-serif;
 	font-weight: bold;
-	text-align: center;
+	text-align: right;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 
