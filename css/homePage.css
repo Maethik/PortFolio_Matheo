@@ -27,15 +27,6 @@ html {
 	align-items: center;
 	background: transparent;
 }
-/* Partie haute de la page */
-
-.homePage-top {
-	background-color: #ff7700;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-}
 .line {
 	position: absolute;
 	display: block;
@@ -86,17 +77,89 @@ nav a {
 .txtHover:hover {
 	color: #ff7700;
 }
+/* Partie haute de la page */
 
+.homePage-top {
+	background-color: #ff7700;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.Home-container {
+	display: flex;
+	flex-direction: column;
+}
+.nav-container {
+	display: flex;
+	height: 12vh;
+	width: 100vw;
+	align-items: center;
+}
+.titleNav {
+	position: fixed;
+	right: 30px;
+}
+.titleNav p {
+	color: #f1f1f1;
+	font-size: 4rem;
+	margin: 0px;
+}
+.textAcroche-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 88vh;
+	flex-direction: column;
+}
 .textAcroche {
 	color: #f1f1f1;
-	width: 33vw;
+	width: 60vw;
 	font-size: 3em;
 	font-family: 'Sofia Sans Semi Condensed', sans-serif;
 	font-weight: bold;
-	text-align: right;
+	text-align: center;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
+}
+.changeTextBtn-container {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	flex-direction: column;
+	background-color: red;
+}
+.changeTextBtn-container p {
+	margin: 0px;
+	color: #f1f1f1;
+	font-size: 2rem;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	display: flex;
+	justify-content: center;
+
+}
+.btn-container {
+	border-width: 3px;
+	background-color: #1b1b1b;
+	border-radius: 50px;
+	width: 15vw;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+.btn-container span {
+	width: 2px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #f1f1f1;
+}
+.btn {
+	font-size: 2rem;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	color: #f1f1f1;
+	background-color: transparent;
+	border-style: none;
 }
 
 /* Partie basse de la page */
