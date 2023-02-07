@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/homePage.css">
+	<link rel="stylesheet" href="css/swiper.css">
 	<title>Home Page</title>
 </head>
 
@@ -33,25 +34,25 @@
 					<div class="textAcroche">
 						<h1>Bonjour et bienvenue sur <em>mon portfolio</em> !</h1>
 					</div>
-
-					<div class="changeTextBtn-container">
-						<p>Dois-je vous dire :</p>
-						<div class="btn-container">
-							<button type="button" aria-label="change text to bonjour" class="bonjourbtn btn" id="bonjour">Bonjour</button>
-							<span></span>
-							<button type="button" aria-label="change text to bonsoir" class="bonsoirbtn btn" id="bonsoir">Bonsoir</button>
-						</div>
-					</div>
 				</div>
-
 			</div>
 		</div>
 		<div class="homePage-bottom">
-
+			<div class="recentsProjects-container">
+				<h1>Mes projets récents</h1>
+				<?php include('swiperSlide.php') ?>
+			</div>
 		</div>
+
+		<footer>
+			<?php include("footer.php") ?>
+		</footer>
 	</div>
 
 	<script src="js/homePage.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	
 </body>
 
 </html>
