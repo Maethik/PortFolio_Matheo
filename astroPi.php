@@ -23,7 +23,7 @@
         </button>
         <div class="projectName-container">
             <div class="name">
-                <h1><?php echo 'Le projet ', $astroPiName ?></h1>
+                <h1><?php echo $monPortfolio ?></h1>
             </div>
             <div class="space"></div>
             <div class="logo">
@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <div class="spaceLabTitle-container">
+    <div id="sltc1" class="spaceLabTitle-container">
         <h1>MISSION SPACE LAB</h1>
     </div>
 
@@ -45,7 +45,7 @@
             <h2>Astro Pi ? C'est quoi ?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id malesuada nunc. Donec at ante convallis, ultrices sem ut, auctor lorem.</p>
 
-            <button href="https://astro-pi.org/mission-space-lab/" target="_blank">En savoir plus</button>
+            <button><a href="https://astro-pi.org/mission-space-lab/" target="_blank">En savoir plus</a></button>
         </div>
     </div>
 

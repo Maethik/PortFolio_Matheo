@@ -64,7 +64,13 @@ body {
 }
 
 .space {
-    width: 150px;
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .logo img {
@@ -72,11 +78,37 @@ body {
     height: 150px;
 }
 
+.logo p {
+    margin: 0px;
+    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.htmlLogo {
+    color: #ff7700;
+}
+
+.cssLogo {
+    color: rgb(0, 170, 255);
+}
+
+/**/
+
 .spaceLabTitle-container {
     height: 100vh;
     display: flex;
     justify-content: center;
+}
+
+#sltc1 {
     background-image: url("../img/bgSpace.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sltc2 {
+    background-image: url("../img/bgCodeHtmlFlou.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -149,6 +181,15 @@ body {
     background-color: transparent;
     border: solid 3px;
     border-color: #f1f1f1;
+    color: #f1f1f1;
+}
+
+.descText button a {
+    text-decoration: none;
+    color: #111;
+}
+
+.descText button a:hover {
     color: #f1f1f1;
 }
 

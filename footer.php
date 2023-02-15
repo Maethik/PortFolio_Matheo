@@ -13,6 +13,7 @@
             <div class="left">
                 <p><a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons">Arrows icons created by Pixel perfect - Flaticon</a></p>
                 <p>Image par <a href="https://pixabay.com/fr/users/prusakov-1149804/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=834635">Sergey Prusakov</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=834635">Pixabay</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a></p>
             </div>
             <div class="separation"></div>
             <div class="right">
@@ -22,7 +23,7 @@
                     <a href="https://www.awwwards.com/matheo/" target="_blank"><img src="img/awwwardsLogo.svg" alt="awwwards logo"></a>
                 </div>
                 <div class="btnContact-container">
-                    <button href="contact.php">Me contacter par mail</button>
+                    <button><a href="contact.php">Me contacter par mail</a></button>
                 </div>
             </div>
         </div>

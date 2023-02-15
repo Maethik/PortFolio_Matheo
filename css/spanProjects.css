@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* projectsSpace-bigContainer */
+.projectsSpace-bigContainer {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.projectsSpace-header {
+    width: 100vw;
+    height: 7vh;
+}
+
+.projectsSpace-header p {
+    margin: 0px;
+    color: #f1f1f1;
+}
+
+.projectsSpace {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divs-container {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.spanProjects {
+    background-color: #f1f1f1;
+    width: 400px;
+    height: 500px;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.spanProjects:hover {
+    box-shadow: 10px 5px 5px #f1f1f1;
+    transition: 0.05s ease-in-out;
+    transform: translateX(-5px);
+    transform: translateY(-5px);
+}
+
+.titleSpace {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    display: flex;
+    align-items: top;
+}
+
+#span1 {
+    background-image: url("../img/bgSpace.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+}
+
+#span2 {
+    background-image: url("../img/bgCodeHtmlFlou.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+}
+
+.title h2 {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 60%;
+    text-align: left;
+    font-size: 2.5em;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    -webkit-text-stroke: 1px #111;
+}
