@@ -12,16 +12,6 @@ body {
     background-color: #111;
 }
 
-.projectsSpace-header {
-    width: 100vw;
-    height: 7vh;
-}
-
-.projectsSpace-header p {
-    margin: 0px;
-    color: #f1f1f1;
-}
-
 .projectsSpace {
     width: 100vw;
     height: 100%;

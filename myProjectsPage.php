@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/myProjectsPage.css">
+    <link rel="stylesheet" href="css/backBtn.css">
     <title>Mes projets</title>
 </head>
 
 <body>
     <header>
-        <button class="backBtn-container">
-            <a href="homePage.php">
+        <button onclick="rtn()" class="backBtn-container">
                 <div class="backArrow">
                     <img src="img/backArrow.png" alt="back arrow">
                 </div>
@@ -18,7 +18,6 @@
                 <div class="backTxt">
                     <p>BACK</p>
                 </div>
-            </a>
         </button>
 
         <div class="titleHeader-container">
@@ -36,6 +35,9 @@
     <footer>
         <?php include('footer.php') ?>
     </footer>
+
+    <script src="js/backBtn.js"></script>
+
 </body>
 
 </html>

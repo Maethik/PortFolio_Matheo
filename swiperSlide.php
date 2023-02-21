@@ -14,14 +14,14 @@
 
             <!-- SLIDE 1 -->
             <div class="swiper-slide silde1">
-                <div class="slide-img">
-                    <!-- IMG -->
+                <div id="slideOne" class="slide-img">
+                    <!-- BGIMG -->
                 </div>
                 <div class="slide-title">
                     <h2>#AstroPi</h2>
                 </div>
                 <div class="slide-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id malesuada nunc. Donec at ante convallis, ultrices sem ut, auctor lorem.</p>
+                    <p>Le projet consistait à prendre des photos de la terre à partir de l'ISS pour ensuite y détecter les fumées d'incendie ...</p>
                 </div>
                 <div class="slide-readmore-btn">
                     <button><a href="astroPi.php">Lire plus</a></button>
@@ -30,24 +30,24 @@
 
             <!-- SLIDE 2 -->
             <div class="swiper-slide silde2">
-                <div class="slide-img">
-                    <!-- IMG -->
+                <div id="slideTwo" class="slide-img">
+                    <!-- BGIMG -->
                 </div>
                 <div class="slide-title">
-                    <!-- TITLE -->
+                    <h2>#MonPortfolio</h2>
                 </div>
                 <div class="slide-desc">
-                    <!-- SHORT DESC -->
+                    <p>Ce site m'a permis de me faire de l'expérience avec les langages du web ...</p>
                 </div>
                 <div class="slide-readmore-btn">
-                    <!-- READ MORE BTN -->
+                    <button><a href="myPortfolio.php">Lire plus</a></button>
                 </div>
             </div>
 
             <!-- SLIDE 3 -->
             <div class="swiper-slide silde3">
                 <div class="slide-img">
-                    <!-- IMG -->
+                    <!-- BGIMG -->
                 </div>
                 <div class="slide-title">
                     <!-- TITLE -->

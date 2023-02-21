@@ -8,44 +8,9 @@ body {
     margin: 0px;
     padding: 0px;
     height: 200vh;
-    background-color: #111;
 }
 
-.backBtn-container {
-    position: fixed;
-    top: 85px;
-    left: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f1f1f1;
-    border-style: none;
-    border-radius: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 200px;
-}
 
-.backBtn-container a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-}
-
-.backArrow img {
-    transform: rotate(180deg);
-    width: 40px;
-    height: 40px;
-}
-
-.backTxt p {
-    color: #111;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10px;
-}
 
 .projectName-container {
     width: fit-content;
@@ -132,27 +97,65 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.black {
+    background-color: #111;
+    color: #f1f1f1;
+}
+
+.white {
+    background-color: white;
+    color: #111;
+
 }
 
 .imgRight {
-    width: 50vw;
-    height: 100%;
+    width: 30%;
+    height: 70%;
+    border-radius: 30px;
+    box-shadow: 30px -20px 10px rgb(186, 186, 186);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.imgRight img {
-    border-radius: 30px;
-    box-shadow: 30px -20px 10px rgb(186, 186, 186);
+
+#imgAstroPi1 {
+    background-image: url('../img/imgCodePython.jpg');
+}
+
+#imgAstroPi2 {
+    background-image: url('../img/Hyrome1.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+#imgAstroPi3 {
+    background-image: url('../img/knnImg.jpg');
+    background-size: cover;
+    background-position: 90%;
+}
+
+#imgPortfolio1 {
+    background-image: url('../img/imgPortfolioMouvementUn.jpg');
+    background-size: cover;
+    background-position: 90%;
+}
+
+#imgPortfolio2 {
+    background-image: url('../img/imgCodeWeb.jpg');
+    background-size: cover;
+    background-position: 90%;
 }
 
 .descText {
-    width: 50vw;
+    width: 40%;
     margin-right: 5%;
 }
 
 .descText h2 {
-    color: #f1f1f1;
+    color: #ff7700;
     font-size: 2.5em;
     font-weight: bold;
     font: italic;
@@ -160,10 +163,14 @@ body {
 }
 
 .descText p {
-    color: #f1f1f1;
     font-size: 2em;
     font-family: 'Source Code Pro', monospace;
     text-align: justify;
+}
+
+.descText p a {
+    text-decoration: underline;
+    color: #f1f1f1;
 }
 
 .descText button {

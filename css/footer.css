@@ -11,12 +11,12 @@ body {
 
 .footer {
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     background-color: #f1f1f1;
 }
 
 .colones-container {
-    height: 50vh;
+    height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -37,7 +37,7 @@ body {
 
 .separation {
     width: 2px;
-    height: 30vh;
+    height: 60vh;
     background-color: #111;
 }
 

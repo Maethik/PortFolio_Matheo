@@ -12,7 +12,7 @@
 	<div class="homePage-container">
 		<div class="homePage-top">
 			<nav>
-				<a class="txtHover" href="#">A propos</a>
+				<a class="txtHover" href="about.php">A propos</a>
 				<a class="txtHover" href="pdf/cv.pdf" title="Pdf" target="_blank">Mon CV</a>
 				<a class="txtHover" href="myProjectsPage.php">Mes projets</a>
 				<a class="txtHover" href="contact.php">Me contacter</a>
