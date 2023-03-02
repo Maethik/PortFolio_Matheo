@@ -33,16 +33,16 @@ body {
 
 .header h1 {
     color: #f1f1f1;
-    font-size: 6em;
+    font-size: clamp(50px, 5vw, 80px);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
-    width: 30%;
+    width: fit-content;
     margin-left: 50px;
 }
 
 .header h1 span {
     font-family: 'Source Code Pro', monospace;
-    font-size: 5rem;
+    font-size: clamp(45px, 5vw, 70px);
     transition-property: color;
     transition-duration: 0.75s;
     transition-delay: 0s;
@@ -101,14 +101,14 @@ body {
 }
 
 .rightColumn h2 {
-    font-size: 5em;
+    font-size: clamp(45px, 5vw, 70px);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     margin-bottom: 0px;
 }
 
 .rightColumn h3 {
-    font-size: 4em;
+    font-size: clamp(30px, 5vw, 60px);
     font-family: 'Kaushan Script', cursive; /*Kaushan Script*/
     margin-top: 0px;
 }
@@ -117,7 +117,7 @@ body {
     width: 60%;
     margin-left: 7.5%;
     text-align: justify;
-    font-size: 2em;
+    font-size: clamp(20px, 5vw, 35px);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -135,4 +135,30 @@ body {
 
 .blackBgc {
     background-color: black;
+}
+
+@media screen and (max-width:1023px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+    .header h1 {
+        margin-left: 0px;
+    }
+    .imgProfil {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .leftColumn {
+        visibility: hidden;
+        width: 0px;
+    }
+    .rightColumn {
+        width: 100vw;
+        margin-left: 10%;
+    }
+    .rightColumn p {
+        width: 80%;
+    }
 }

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
 body {
     margin: 0px;
@@ -58,6 +59,10 @@ body {
     color: rgb(0, 170, 255);
 }
 
+.projetITLogo {
+    color: #f1f1f1;
+}
+
 /**/
 
 .spaceLabTitle-container {
@@ -70,10 +75,17 @@ body {
     background-image: url("../img/bgSpace.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 25%;
 }
 
 #sltc2 {
     background-image: url("../img/bgCodeHtmlFlou.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sltc3 {
+    background-image: url("../img/bgProjetIT_num2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -83,8 +95,8 @@ body {
     display: flex;
     align-items: center;
     color: #f1f1f1;
-    -webkit-text-stroke: 5px #111;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: 2px #111;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .spaceLabTitle-container p {
@@ -149,6 +161,18 @@ body {
     background-position: 90%;
 }
 
+#imgProjetIT1 {
+    background-image: url('../img/imgProjetIT_num1.jpg');
+    background-size: cover;
+    background-position: 22%;
+}
+
+#imgProjetIT2 {
+    background-image: url('../img/bgProjetIT_num1.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
 .descText {
     width: 40%;
     margin-right: 5%;
@@ -170,11 +194,10 @@ body {
 
 .descText p a {
     text-decoration: underline;
-    color: #f1f1f1;
 }
 
 .descText button {
-    background-color: #f1f1f1;
+    background-color: #fff;
     border-radius: 5px;
     border-style: none;
     padding: 10px;
@@ -198,17 +221,4 @@ body {
 
 .descText button a:hover {
     color: #f1f1f1;
-}
-
-footer {
-    width: 100vw;
-    height: 75vh;
-    background-color: #fff;
-}
-
-/* FOOTER */
-footer {
-	width: 100vw;
-	height: 50vh;
-	background-color: #111;
 }

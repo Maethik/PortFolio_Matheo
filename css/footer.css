@@ -11,12 +11,11 @@ body {
 
 .footer {
     width: 100vw;
-    height: 75vh;
-    background-color: #f1f1f1;
+    background-color: #fff;
 }
 
 .colones-container {
-    height: 75vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -30,30 +29,30 @@ body {
     align-items: center;
 }
 
-.left p {
-    color: #111;
-    font-size: 1.25rem;
-}
-
 .separation {
     width: 2px;
-    height: 60vh;
+    height: 80vh;
     background-color: #111;
 }
 
 .right {
     width: 50vw;
-    height: 50vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.right p {
+    color: #111;
+    font-size: 1.25rem;
+}
+
 .links-container {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 60%;
 }
 
 .links-container a {
@@ -95,4 +94,21 @@ body {
 
 .btnContact-container button a:hover {
     color: #111;
+}
+
+@media screen and (max-width:1023px) {
+    .colones-container {
+        flex-direction: column;
+    }
+    .left {
+        width: 100vw;
+    }
+    .right {
+        width: 100vw;
+        margin-top: 4%;
+    }
+    .separation {
+        width: 80vw;
+        height: 3px;
+    }
 }

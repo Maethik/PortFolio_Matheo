@@ -32,6 +32,8 @@
 
     <?php include('spanProjects.php') ?>
 
+    <div class="gradient"></div>
+
     <footer>
         <?php include('footer.php') ?>
     </footer>

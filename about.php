@@ -23,7 +23,7 @@
         <div class="divImgProfil">
             <img class="imgProfil" src="img/photoProfil.jpg" alt="photo de Mathéo">
         </div>
-        <h1>Un lycéen passionné <span>d'informatique</span></h1>
+        <h1>Un lycéen<br />passionné<br /><span>d'informatique</span></h1>
     </div>
 
     <div class="contentPage-container">

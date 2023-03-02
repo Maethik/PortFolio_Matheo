@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #f1f1f1;
+    background-color: #fff;
     border-style: none;
     border-radius: 30px;
     padding-right: 10px;
@@ -32,4 +32,10 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 10px;
+}
+
+@media screen and (max-width:1023px) {
+    .backBtn-container {
+        visibility: hidden;
+    }
 }

@@ -42,7 +42,7 @@
 
         <div class="descText">
             <h2>Pourquoi ?</h2>
-            <p class="black">Il y à quelque temps, je me suis lancé dans ce projet dans l'objectif de le mettre en lien dans mes projets motivés sur Parcoursup. En effet je me suis dit que cela pourrait être un plus dans la prise en compte de mon dossier et que cela permettrait aux IUT d'avoir un aperçu de ce que je fais déjà. Ce site me permet aussi de me faire de l'expérience avec les langages du web et ensuite proposer des sites web sur Fiverr (<a href="https://fr.fiverr.com/maethik" target="_blank">lien vers Fiverr</a>). Enfin acquérir plus de visibilité sur internet quoi !</p>
+            <p class="black">Il y à quelque temps, je me suis lancé dans ce projet dans l'objectif de le mettre en lien dans mes projets motivés sur Parcoursup. En effet je me suis dit que cela pourrait être un plus dans la prise en compte de mon dossier et que cela permettrait aux IUT d'avoir un aperçu de ce que je fais déjà. Ce site me permet aussi de me faire de l'expérience avec les langages du web et ensuite proposer des sites web sur Fiverr (<a class="black" href="https://fr.fiverr.com/maethik" target="_blank">lien vers Fiverr</a>). Enfin acquérir plus de visibilité sur internet quoi !</p>
         </div>
     </div>
 

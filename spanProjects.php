@@ -32,10 +32,10 @@
                 </a>
 
                 <!-- Project 3 -->
-                <a href="#" id="3" class="spanProjects">
+                <a href="projetIT.php" id="span3" class="spanProjects">
                     <div class="titleSpace">
                         <div class="title">
-                            <h2><?php echo "Le concours <br />", $astroPiName ?></h2>
+                            <h2><?php echo $projetIT, " 2022" ?></h2>
                         </div>
                     </div>
                 </a>

@@ -46,17 +46,17 @@
 
             <!-- SLIDE 3 -->
             <div class="swiper-slide silde3">
-                <div class="slide-img">
+                <div id="slideThree" class="slide-img">
                     <!-- BGIMG -->
                 </div>
                 <div class="slide-title">
-                    <!-- TITLE -->
+                    <h2>#ProjetIT2022</h2>
                 </div>
                 <div class="slide-desc">
-                    <!-- SHORT DESC -->
+                    <p>Nous devions trouver un moyen de communiquer avec le véhicule derrière le nôtre.</p>
                 </div>
                 <div class="slide-readmore-btn">
-                    <!-- READ MORE BTN -->
+                    <button><a href="projetIT.php">Lire plus</a></button>
                 </div>
             </div>
         </div>

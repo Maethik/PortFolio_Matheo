@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
 /* Home Page CSS */
 body,
@@ -84,7 +85,7 @@ nav.active {
 nav a {
 	font-family: 'Sofia Sans Semi Condensed', sans-serif;
 	color: #f1f1f1;
-	font-size: 4em;
+	font-size: clamp(40px, 5vw, 60px);
 	display: block;
 	margin: 20px 0;
 	text-decoration: none;
@@ -102,6 +103,7 @@ nav a {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 3%;
 }
 
 .Home-container {
@@ -138,7 +140,7 @@ nav a {
 .textAcroche {
 	color: #f1f1f1;
 	width: 60vw;
-	font-size: 3em;
+	font-size: clamp(40px, 5vw, 50px);
 	font-family: 'Sofia Sans Semi Condensed', sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -150,17 +152,17 @@ nav a {
 
 /* Partie basse de la page */
 .homePage-bottom {
-	background-color: #f1f1f1;
+	background-color: #fff;
 	width: 100vw;
 	height: 100vh;
 }
 
 .recentsProjects-container h1 {
-	font-size: 3rem;
-	display: flex;
-	justify-content: center;
-	font-family: 'Rock Salt', cursive;
-
+	font-size: clamp(45px, 5vw, 70px);
+	text-align: center;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 /* Swiper Content */
 .swiper-slide {
@@ -189,10 +191,17 @@ nav a {
     background-position: 25%;
 }
 
+#slideThree {
+	background-image: url("../img/imgCity.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+}
+
 .slide-title {
 	font-size: 1.5rem;
 	color: rgb(44, 44, 44);
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Tilt Warp', cursive;
 	margin-left: 20px;
 	margin-top: 5px;
 }
@@ -203,7 +212,7 @@ nav a {
 .slide-desc {
 	color: rgb(72, 72, 72);
 	font-size: 1.25rem;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
 	margin-right: 30px;
 	margin-left: 30px;
 	text-align: justify;
@@ -215,11 +224,12 @@ nav a {
 	align-items: center;
 }
 .slide-readmore-btn button {
+	border: solid 3px;
 	border-color: #111;
 	border-radius: 0px;
 	background-color: transparent;
 	color: #111;
-	font-family: 'Aboreto', cursive;
+	font-family: 'Tilt Warp', cursive;
 	font-size: 1.5rem;
 	padding: 5px;
 }
@@ -250,5 +260,9 @@ footer {
 
 	.textAcroche {
 		font-size: 2rem;
+	}
+	.recentsProjects-container h1 {
+		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 }
