@@ -12,6 +12,10 @@ html {
 	padding: 0px;
 }
 
+html.active {
+	overflow-y: hidden;
+}
+
 .homePage-container {
 	display: flex;
 	flex-direction: column;
@@ -73,7 +77,7 @@ nav {
 	align-items: center;
 	flex-direction: column;
 	background: #111;
-	
+
 	transform: translateX(-100%);
 	transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
@@ -164,11 +168,13 @@ nav a {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+
 /* Swiper Content */
 .swiper-slide {
 	display: flex;
 	flex-direction: column;
 }
+
 .slide-img {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
@@ -180,22 +186,22 @@ nav a {
 #slideOne {
 	background-image: url("../img/bgMountain.svg");
 	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25%;
+	background-repeat: no-repeat;
+	background-position: 25%;
 }
 
 #slideTwo {
 	background-image: url("../img/bgHtmlAndCss.svg");
 	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25%;
+	background-repeat: no-repeat;
+	background-position: 25%;
 }
 
 #slideThree {
 	background-image: url("../img/imgCity.png");
 	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25%;
+	background-repeat: no-repeat;
+	background-position: 25%;
 }
 
 .slide-title {
@@ -205,10 +211,12 @@ nav a {
 	margin-left: 20px;
 	margin-top: 5px;
 }
+
 .slide-title h2 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+
 .slide-desc {
 	color: rgb(72, 72, 72);
 	font-size: 1.25rem;
@@ -217,12 +225,14 @@ nav a {
 	margin-left: 30px;
 	text-align: justify;
 }
+
 .slide-readmore-btn {
 	height: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .slide-readmore-btn button {
 	border: solid 3px;
 	border-color: #111;
@@ -233,14 +243,17 @@ nav a {
 	font-size: 1.5rem;
 	padding: 5px;
 }
+
 .slide-readmore-btn a {
 	text-decoration: none;
 	color: #111;
 }
+
 .slide-readmore-btn button:hover {
 	color: #ff7700;
 	border-color: #ff7700;
 }
+
 .slide-readmore-btn a:hover {
 	color: #ff7700;
 }
@@ -261,6 +274,7 @@ footer {
 	.textAcroche {
 		font-size: 2rem;
 	}
+
 	.recentsProjects-container h1 {
 		margin-top: 10%;
 		margin-bottom: 10%;

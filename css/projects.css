@@ -8,10 +8,21 @@
 body {
     margin: 0px;
     padding: 0px;
-    height: 200vh;
 }
 
+.containerBody {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
+.container-container {
+    scroll-snap-align: center;
+}
+
+header {
+    position: relative;
+}
 
 .projectName-container {
     width: fit-content;
@@ -85,13 +96,13 @@ body {
 }
 
 #sltc3 {
-    background-image: url("../img/bgProjetIT_num2.jpg");
+    background-image: url("../img/bgProjetIT_sombre.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .spaceLabTitle-container h1 {
-    font-size: 7em;
+    font-size: clamp(4rem, 8vw, 7rem);
     display: flex;
     align-items: center;
     color: #f1f1f1;
@@ -187,7 +198,7 @@ body {
 }
 
 .descText p {
-    font-size: 2em;
+    font-size: clamp(15px, 5vw, 30px);
     font-family: 'Source Code Pro', monospace;
     text-align: justify;
 }
@@ -221,4 +232,38 @@ body {
 
 .descText button a:hover {
     color: #f1f1f1;
+}
+
+
+@media screen and (max-width:1023px) {
+    .projectName-container {
+        visibility: hidden;
+    }
+
+    .spaceLabTitle-container h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width:1375px) {
+    .name {
+        visibility: hidden;
+    }
+
+    #sltc1 {
+        background-position: 80%;
+    }
+
+    .imgRight {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .descText {
+        width: 100%;
+        height: fit-content;
+        margin-left: 5%;
+    }
 }

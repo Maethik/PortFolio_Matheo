@@ -9,67 +9,76 @@
 </head>
 
 <body>
-    <?php include('variable.php') ?>
-    <header>
-        <button onclick="rtn()" class="backBtn-container">
-                <div class="backArrow">
-                    <img src="img/backArrow.png" alt="back arrow">
-                </div>
 
-                <div class="backTxt">
-                    <p>BACK</p>
+    <div class="containerBody">
+        <?php include('variable.php') ?>
+
+        <div class="header-container container-container">
+            <header class="container-container">
+                <button onclick="rtn()" class="backBtn-container">
+                    <div class="backArrow">
+                        <img src="img/backArrow.png" alt="back arrow">
+                    </div>
+
+                    <div class="backTxt">
+                        <p>BACK</p>
+                    </div>
+                </button>
+                <div class="projectName-container">
+                    <div class="name">
+                        <h1>Mission Space Lab</h1>
+                    </div>
+                    <div class="space"></div>
+                    <div class="logo">
+                        <img src="img/astroPiLogo.svg" alt="logo">
+                    </div>
                 </div>
-        </button>
-        <div class="projectName-container">
-            <div class="name">
+            </header>
+
+            <div id="sltc1" class="spaceLabTitle-container">
                 <h1><?php echo 'Le concours ', $astroPiName ?></h1>
             </div>
-            <div class="space"></div>
-            <div class="logo">
-                <img src="img/astroPiLogo.svg" alt="logo">
+
+        </div>
+
+        <!-- C'est quoi ? -->
+        <div class="desc-container black container-container">
+            <div id="imgAstroPi1" class="imgRight"></div>
+
+            <div class="descText">
+                <h2>Astro Pi ? C'est quoi ?</h2>
+                <p class="black">Le concours Astro Pi est organisé par l'ESA, pour les écoles européennes. Il se décompose en 4 phases : la soumission du projet, la réalisation du projet, la vérification du programme et son exécution sur l'ISS, puis la phase de compte rendu en anglais. Chaque phase est éliminatoire. Le meilleur compte rendu gagne le concours.</p>
+
+                <button><a href="https://astro-pi.org/mission-space-lab/" target="_blank">En savoir plus</a></button>
             </div>
         </div>
-    </header>
 
-    <div id="sltc1" class="spaceLabTitle-container">
-        <h1>MISSION SPACE LAB</h1>
-    </div>
+        <!-- Notre projet -->
+        <div class="desc-container white container-container">
+            <div id="imgAstroPi2" class="imgRight"></div>
 
-    <!-- C'est quoi ? -->
-    <div class="desc-container black">
-        <div id="imgAstroPi1" class="imgRight"></div>
-
-        <div class="descText">
-            <h2>Astro Pi ? C'est quoi ?</h2>
-            <p class="black">Le concours Astro Pi est organisé par l'ESA, pour les écoles européennes. Il se décompose en 4 phases : la soumission du projet, la réalisation du projet, la vérification du programme et son exécution sur l'ISS, puis la phase de compte rendu en anglais. Chaque phase est éliminatoire. Le meilleur compte rendu gagne le concours.</p>
-
-            <button><a href="https://astro-pi.org/mission-space-lab/" target="_blank">En savoir plus</a></button>
+            <div class="descText">
+                <h2>Notre projet</h2>
+                <p class="white">Pour réaliser le projet, nous étions par groupe de 5. Le notre consistait à prendre des photos de la terre à partir de l'ISS pour ensuite y détecter les fumées d'incendie. Le but était de créer un moyen de détecter les feux plus efficacement.</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Notre projet -->
-    <div class="desc-container white">
-        <div id="imgAstroPi2" class="imgRight"></div>
+        <!-- Mes tâches -->
+        <div class="desc-container black container-container">
+            <div id="imgAstroPi3" class="imgRight"></div>
 
-        <div class="descText">
-            <h2>Notre projet</h2>
-            <p class="white">Pour réaliser le projet, nous étions par groupe de 5. Le notre consistait à prendre des photos de la terre à partir de l'ISS pour ensuite y détecter les fumées d'incendie. Le but était de créer un moyen de détecter les feux plus efficacement.</p>
+            <div class="descText">
+                <h2>Mes tâches</h2>
+                <p class="black">Pour ce projet j'étais chargé de faire le traitement d'image. Pour cela j'ai opté pour la méthode KNN (Cas Plus Proche Voisin en français). Mais les images étaient trop grandes en termes de pixels et donc le traitement d'une seule image mettait trop longtemps ... J'ai alors dû faire un code qui découpe les images en d'autres plus petites.</p>
+            </div>
         </div>
+
+        <footer class="container-container">
+            <?php include('footer.php') ?>
+        </footer>
     </div>
 
-    <!-- Mes tâches -->
-    <div class="desc-container black">
-        <div id="imgAstroPi3" class="imgRight"></div>
 
-        <div class="descText">
-            <h2>Mes tâches</h2>
-            <p class="black">Pour ce projet j'étais chargé de faire le traitement d'image. Pour cela j'ai opté pour la méthode KNN (Cas Plus Proche Voisin en français). Mais les images étaient trop grandes en termes de pixels et donc le traitement d'une seule image mettait trop longtemps ... J'ai alors dû faire un code qui découpe les images en d'autres plus petites.</p>
-        </div>
-    </div>
-
-    <footer>
-        <?php include('footer.php') ?>
-    </footer>
 
     <script src="js/backBtn.js"></script>
 

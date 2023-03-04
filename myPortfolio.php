@@ -9,56 +9,62 @@
 </head>
 
 <body>
-    <?php include('variable.php') ?>
-    <header>
-        <button onclick="rtn()"  class="backBtn-container">
-                <div class="backArrow">
-                    <img src="img/backArrow.png" alt="back arrow">
-                </div>
 
-                <div class="backTxt">
-                    <p>BACK</p>
+    <div class="containerBody">
+
+        <?php include('variable.php') ?>
+        <div class="header-container container-container">
+            <header class="container-container">
+                <button onclick="rtn()" class="backBtn-container">
+                    <div class="backArrow">
+                        <img src="img/backArrow.png" alt="back arrow">
+                    </div>
+
+                    <div class="backTxt">
+                        <p>BACK</p>
+                    </div>
+                </button>
+                <div class="projectName-container">
+                    <div class="name">
+                        <h1>Mon site web</h1>
+                    </div>
+                    <div class="space"></div>
+                    <div class="logo">
+                        <p class="htmlLogo">&lt;/html&gt;</p>
+                        <p class="cssLogo">#css</p>
+                    </div>
                 </div>
-        </button>
-        <div class="projectName-container">
-            <div class="name">
+            </header>
+
+            <div id="sltc2" class="spaceLabTitle-container">
                 <h1><?php echo $monPortfolio ?></h1>
             </div>
-            <div class="space"></div>
-            <div class="logo">
-                <p class="htmlLogo">&lt;/html&gt;</p>
-                <p class="cssLogo">#css</p>
+        </div>
+
+        <!-- Pourquoi ? -->
+        <div class="desc-container black container-container">
+            <div id="imgPortfolio1" class="imgRight"></div>
+
+            <div class="descText">
+                <h2>Pourquoi ?</h2>
+                <p class="black">Il y à quelque temps, je me suis lancé dans ce projet dans l'objectif de le mettre en lien dans mes projets motivés sur Parcoursup. En effet je me suis dit que cela pourrait être un plus dans la prise en compte de mon dossier et que cela permettrait aux IUT d'avoir un aperçu de ce que je fais déjà. Ce site me permet aussi de me faire de l'expérience avec les langages du web et ensuite proposer des sites web sur Fiverr (<a class="black" href="https://fr.fiverr.com/maethik" target="_blank">lien vers Fiverr</a>). Enfin acquérir plus de visibilité sur internet quoi !</p>
             </div>
         </div>
-    </header>
 
-    <div id="sltc2" class="spaceLabTitle-container">
-        <h1>MON SITE WEB !</h1>
-    </div>
+        <!-- Comment ? -->
+        <div class="desc-container white container-container">
+            <div id="imgPortfolio2" class="imgRight"></div>
 
-    <!-- Pourquoi ? -->
-    <div class="desc-container black">
-        <div id="imgPortfolio1" class="imgRight"></div>
-
-        <div class="descText">
-            <h2>Pourquoi ?</h2>
-            <p class="black">Il y à quelque temps, je me suis lancé dans ce projet dans l'objectif de le mettre en lien dans mes projets motivés sur Parcoursup. En effet je me suis dit que cela pourrait être un plus dans la prise en compte de mon dossier et que cela permettrait aux IUT d'avoir un aperçu de ce que je fais déjà. Ce site me permet aussi de me faire de l'expérience avec les langages du web et ensuite proposer des sites web sur Fiverr (<a class="black" href="https://fr.fiverr.com/maethik" target="_blank">lien vers Fiverr</a>). Enfin acquérir plus de visibilité sur internet quoi !</p>
+            <div class="descText">
+                <h2>Comment ?</h2>
+                <p class="white">En développant ce site j'ai pu perfectionner ma maîtrise des langages HTML et CSS. J'ai utilisé un petit peu de JavaScript pour deux trois animations sur le site. Je me suis également servi d'un tout tout petit peu de PHP ... juste les bases.</p>
+            </div>
         </div>
+
+        <footer class="container-container">
+            <?php include('footer.php') ?>
+        </footer>
     </div>
-
-    <!-- Comment ? -->
-    <div class="desc-container white">
-        <div id="imgPortfolio2" class="imgRight"></div>
-
-        <div class="descText">
-            <h2>Comment ?</h2>
-            <p class="white">En développant ce site j'ai pu perfectionner ma maîtrise des langages HTML et CSS. J'ai utilisé un petit peu de JavaScript pour deux trois animations sur le site. Je me suis également servi d'un tout tout petit peu de PHP ... juste les bases.</p>
-        </div>
-    </div>
-
-    <footer>
-        <?php include('footer.php') ?>
-    </footer>
 
     <script src="js/backBtn.js"></script>
 
