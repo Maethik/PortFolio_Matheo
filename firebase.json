@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "public/index.php",
     "ignore": [
       "firebase.json",
       "**/.*",
