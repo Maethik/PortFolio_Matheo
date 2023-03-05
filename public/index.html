@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/homePage.css">
 	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<title>Home Page</title>
 </head>
 
@@ -12,10 +13,10 @@
 	<div class="homePage-container">
 		<div class="homePage-top">
 			<nav>
-				<a class="txtHover" href="about.php">A propos</a>
+				<a class="txtHover" href="about.html">A propos</a>
 				<a class="txtHover" href="pdf/cv.pdf" title="Pdf" target="_blank">Mon CV</a>
-				<a class="txtHover" href="myProjectsPage.php">Mes projets</a>
-				<a class="txtHover" href="contact.php">Me contacter</a>
+				<a class="txtHover" href="myProjectsPage.html">Mes projets</a>
+				<a class="txtHover" href="contact.html">Me contacter</a>
 			</nav>
 			<div class="Home-container">
 				<div class="nav-container">
@@ -40,19 +41,144 @@
 		<div class="homePage-bottom">
 			<div class="recentsProjects-container">
 				<h1>Mes projets récents</h1>
-				<?php include('swiperSlide.php') ?>
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+
+						<!-- SLIDE 1 -->
+						<div class="swiper-slide silde1">
+							<div id="slideOne" class="slide-img">
+								<!-- BGIMG -->
+							</div>
+							<div class="slide-title">
+								<h2>#AstroPi</h2>
+							</div>
+							<div class="slide-desc">
+								<p>Le projet consistait à prendre des photos de la terre à partir de l'ISS pour ensuite
+									y détecter les fumées d'incendie ...</p>
+							</div>
+							<div class="slide-readmore-btn">
+								<button><a href="astroPi.html">Lire plus</a></button>
+							</div>
+						</div>
+
+						<!-- SLIDE 2 -->
+						<div class="swiper-slide silde2">
+							<div id="slideTwo" class="slide-img">
+								<!-- BGIMG -->
+							</div>
+							<div class="slide-title">
+								<h2>#MonPortfolio</h2>
+							</div>
+							<div class="slide-desc">
+								<p>Ce site m'a permis de me faire de l'expérience avec les langages du web ...</p>
+							</div>
+							<div class="slide-readmore-btn">
+								<button><a href="myPortfolio.html">Lire plus</a></button>
+							</div>
+						</div>
+
+						<!-- SLIDE 3 -->
+						<div class="swiper-slide silde3">
+							<div id="slideThree" class="slide-img">
+								<!-- BGIMG -->
+							</div>
+							<div class="slide-title">
+								<h2>#ProjetIT2022</h2>
+							</div>
+							<div class="slide-desc">
+								<p>Nous devions trouver un moyen de communiquer avec le véhicule derrière le nôtre.</p>
+							</div>
+							<div class="slide-readmore-btn">
+								<button><a href="projetIT.html">Lire plus</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						effect: "coverflow",
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: "auto",
+						coverflowEffect: {
+							rotate: 50,
+							stretch: 0,
+							depth: 100,
+							modifier: 1,
+							slideShadows: true,
+						},
+						pagination: {
+							el: ".swiper-pagination",
+						},
+					});
+				</script>
 			</div>
 		</div>
 
 		<footer>
-			<?php include("footer.php") ?>
+			<div class="footer">
+				<div class="colones-container">
+					<div class="left">
+						<div class="links-container">
+							<a href="https://github.com/Maethik" target="_blank"><img src="img/githubLogo.svg"
+									alt="github logo"></a>
+							<a href="https://www.linkedin.com/in/math%C3%A9o-guilbert-26a209258/" target="_blank"><img
+									src="img//linkedinLogo.svg" alt="linkedin logo"></a>
+							<a href="https://www.awwwards.com/matheo/" target="_blank"><img src="img/awwwardsLogo.svg"
+									alt="awwwards logo"></a>
+							<a href="https://fr.fiverr.com/maethik" target="_blank"><img
+									src="img/fiverrLogo.svg" alt="fiverr logo"></a>
+						</div>
+						<!--<div class="btnContact-container">
+							<button><a href="contact.html">Me contacter par mail</a></button>
+						</div>-->
+					</div>
+					<div class="separation"></div>
+					<div class="right">
+
+						<p><a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons">Arrows icons
+								created by Pixel perfect - Flaticon</a></p>
+						<p>Image par <a
+								href="https://pixabay.com/fr/users/prusakov-1149804/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=834635">Sergey
+								Prusakov</a> de <a
+								href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=834635">Pixabay</a>
+						</p>
+						<p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created
+								by Freepik - Flaticon</a></p>
+						<p>Image par <a
+								href="https://pixabay.com/fr/users/blendertimer-9538909/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5559099">Daniel
+								Roberts</a> de <a
+								href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5559099">Pixabay</a>
+						</p>
+						<p>Image par <a
+								href="https://pixabay.com/fr/users/krzysztof-m-1363864/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3173456">krzysztof-m</a>
+							de <a
+								href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3173456">Pixabay</a>
+						</p>
+						<p><a href="https://www.flaticon.com/free-icons/pointing" title="pointing icons">Pointing icons
+								created by Freepik - Flaticon</a></p>
+						<p><a href="https://storyset.com/technology">Technology illustrations by Storyset</a></p>
+						<p><a href="https://storyset.com/work">Work illustrations by Storyset</a></p>
+						<p>Image par <a
+								href="https://pixabay.com/fr/users/naobim-1099306/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7577483">naobim</a>
+							de <a
+								href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7577483">Pixabay</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 
 	<script src="js/homePage.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-	
+
 </body>
 
 </html>

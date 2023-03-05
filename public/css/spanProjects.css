@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
@@ -85,8 +87,8 @@ body {
     font-size: 2.5em;
     color: #f1f1f1;
     text-transform: uppercase;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    -webkit-text-stroke: 1px #111;
+    font-family: 'Tilt Warp', cursive;
+    -webkit-text-stroke: 0.5px #111;
 }
 
 @media screen and (max-width:1023px) {
